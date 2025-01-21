@@ -1,0 +1,73 @@
+/* Fullscreen background video */
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video covers the entire screen */
+    z-index: -1; /* Makes sure video stays in the background */
+  }
+  
+  /* Center the container and make the full screen height */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  /* Styling for the main border-box */
+  .border-box {
+    border: 2px solid #ddd;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    z-index: 1; /* Ensures border box is above the video */
+  }
+  
+  /* Heading and subheading styles */
+  .heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .subheading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+  
+  /* Grid layout for buttons - 3 buttons per row */
+  .button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+    gap: 16px;
+    margin-bottom: 20px; /* Add space between button groups */
+  }
+  
+  /* Button styles */
+  .domain-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  .domain-button:hover {
+    background-color: #2563eb;
+    transform: scale(1.05);
+  }
+  

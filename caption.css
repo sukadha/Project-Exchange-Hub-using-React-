@@ -1,0 +1,99 @@
+/* Container for the entire layout */
+.caption-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto; /* Adding margin for space around the layout */
+    padding: 20px 0; /* Removed right padding to extend to the right edge */
+    width: 100%;
+    max-width: 1200px; /* Ensure it doesn't stretch too wide */
+    height: 100vh; /* Set height to viewport height */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    box-sizing: border-box; /* Ensure padding does not affect width */
+  }
+  
+  /* Style for borderbox1 */
+  .borderbox1 {
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    margin-bottom: 15px; /* Reduced bottom margin */
+    border: 2px solid #000;
+    text-align: center;
+    box-sizing: border-box; /* Ensure padding is inside the box */
+  }
+  
+  .borderbox1 h1 {
+    font-size: 2em;
+    margin: 0;
+  }
+  
+  /* Container for the borderbox2 items */
+  .borderbox2-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+    padding: 20px 0; /* Removed right padding to extend to the right edge */
+    box-sizing: border-box; /* Ensure padding is inside the container */
+  }
+  
+  /* Style for each borderbox2 */
+  .borderbox2 {
+    border: 2px solid #000;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box; /* Ensure padding is inside the box */
+    background-color: #f9f9f9; /* Slight background color for visual separation */
+    margin: 10px;
+  }
+  
+  /* Styling for the video output section */
+  .video-output {
+    margin-bottom: 15px;
+  }
+  
+  /* Styling for the title, domain, and cost */
+  h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  p {
+    font-size: 1.2em;
+    margin: 5px 0;
+  }
+  
+  /* Button container styling */
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Optional responsive adjustments */
+  @media (max-width: 768px) {
+    .borderbox2-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .borderbox2-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
